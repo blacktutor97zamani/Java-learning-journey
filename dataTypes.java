@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class dataTypes {
     /*
     * We have two main type of Data Types (Primitive and Reference Datatypes)
@@ -20,17 +21,62 @@ public class dataTypes {
     *
     * */
 
-
+        //simple project on Data Types
+        /*
+        * Building a console program that
+        * collects a student's details and test scores, processes
+        * them and prints a summary report
+        * */
         public static void main(String[] args){
-            int a = 1123;
-            byte b = 125;
-            short c = 11;
-            long l = 2390312;
+            Scanner scanner = new Scanner(System.in);
+            String name;
+            char gender;
+            String courseName;
+            int studentID;
 
-            float d = 46.7f;
-            double e = 47.7;
+            double subjectScore1, subjectScore2, subjectScore3;
+            //double total = subjectScore1 + subjectScore2 + subjectScore3;
 
-            System.out.println(a +"\n " + b +"\n " + c +"\n " + l+ "\n " );
+
+            System.out.print("Enter Student Name: ");
+            name = scanner.nextLine();
+
+            System.out.println("Gender: M / F");
+            gender = scanner.next().charAt(0);
+            scanner.nextLine();
+
+            System.out.println("Student ID");
+            studentID = scanner.nextInt();
+            scanner.nextLine(); //consume leftover newline
+
+
+            System.out.println("Course Name: ");
+            courseName = scanner.nextLine();
+
+
+            System.out.println("Subject Score: ");
+            subjectScore1 = scanner.nextDouble();
+
+            System.out.println("Subject Score: ");
+            subjectScore2 = scanner.nextDouble();
+
+            System.out.println("Subject Score: ");
+            subjectScore3 = scanner.nextDouble();
+
+            double total = subjectScore1 + subjectScore2 + subjectScore3;
+            double average = total / 3;
+            double percentage = (total / 300) * 100;
+
+            System.out.println("\n----- Student Report -----");
+            System.out.println("Name: " + name);
+            System.out.println("ID: " + studentID);
+            System.out.println("Gender: " + gender);
+            System.out.println("Course: " + courseName);
+
+
+
+
+
         }
 
 }
