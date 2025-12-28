@@ -46,8 +46,46 @@ public class typeConversion {
                     break;
 
                 case 3:
-                    System.out.print("Enter a String: ");
+                    System.out.print("Enter a numeric String: ");
                     String str = scanner.nextLine();
+                    try{
+                        int number = Integer.parseInt(str);
+                        System.out.println("Converted int value = " + number);
+                    }catch(NumberFormatException e) {
+                        System.out.println("Error: '" + str +"' is not a valid number.");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("Enter an integer: ");
+                    int num2 = scanner.nextInt();
+                    String stringValue = String.valueOf(num2);
+                    System.out.println("Converted String value = " + stringValue);
+                    break;
+
+
+                case 5:
+                    System.out.println("Enter a Character: ");
+                    char ch = scanner.nextLine().charAt(0);
+                    int ascii = (int) ch;
+                    System.out.println("ASCII value = " + ascii);
+                    break;
+
+                case 6:
+                    System.out.println("Enter an ASCII value: ");
+                    int asciiValue = scanner.nextInt();
+                    char character = (char) asciiValue;
+                    System.out.println("Character = " + character);
+                    break;
+
+                case 7:
+                    System.out.println("Exiting..... Goodbye");
+                    break;
+
+
+                default:
+                    System.out.println("Invalid choice, try again!");
+
 
 
 
