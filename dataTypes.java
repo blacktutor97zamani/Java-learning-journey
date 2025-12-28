@@ -75,7 +75,7 @@ public class dataTypes {
 
             System.out.printf("Total: %.2f\n", total);
             System.out.printf("Average: %.2f\n", average);
-            System.out.println("Percentage: %.2f\n", percentage);
+            System.out.printf("Percentage: %.2f\n", percentage);
 
 
         }
