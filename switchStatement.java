@@ -8,6 +8,7 @@ public class switchStatement {
         String days = "Wednesday";
 
         //Previous method
+        /*
         switch (days){
             case "monday", "tuesday" :
                 System.out.println("Wake up at 5am");
@@ -19,5 +20,18 @@ public class switchStatement {
                 System.out.println("Wake up at 6:30am");
 
         }
+
+         */
+
+        //***********New UPDATE*********************
+
+        String result = "";
+        switch(days){
+            case "mondays", "tuesday" -> result = "Wake up at 5am";
+            case "friday" -> result = "Wake up at 6am";
+            default -> result =  "Wake up at 6:30am";
+        }
+
+        System.out.println(result);
     }
 }
