@@ -9,6 +9,14 @@ public class switchStatement {
 
         //Previous method
         switch (days){
+            case "monday", "tuesday" :
+                System.out.println("Wake up at 5am");
+                break;
+            case "friday":
+                System.out.println("Wake up at 6am");
+                break;
+            default:
+                System.out.println("Wake up at 6:30am");
 
         }
     }
