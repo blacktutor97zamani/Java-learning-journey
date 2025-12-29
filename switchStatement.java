@@ -24,7 +24,7 @@ public class switchStatement {
          */
 
         //***********New UPDATE*********************
-
+        /*
         String result = "";
         switch(days){
             case "mondays", "tuesday" -> result = "Wake up at 5am";
@@ -33,5 +33,23 @@ public class switchStatement {
         }
 
         System.out.println(result);
+
+         */
+
+        //**********Update 2****************
+        //Incase you want to use ":" instead of "->" the you introduce the yield
+
+        String result = "";
+        result =switch(days) {
+            case "mondays", "tuesday":
+                yield "Wake up at 5am";
+            case "friday":
+                yield "Wake up at 6am";
+            default:
+                yield "Wake up at 6:30am";
+        };
+
+        System.out.println(result);
+
     }
 }
