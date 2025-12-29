@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Yussif Konda Mohammed
+ * @github blacktutor97zamani
+ *
+ */
+
 import java.util.Scanner;
 public class typeConversion {
     /*
@@ -25,7 +32,7 @@ public class typeConversion {
             System.out.println("6. Convert ASCII to char");
             System.out.println("7. EXIT");
 
-            System.out.println("Choose an option");
+            System.out.println("Choose an option: ");
 
             choice = scanner.nextInt();
             scanner.nextLine(); //clearing the buffer
