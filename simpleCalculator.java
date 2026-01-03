@@ -24,8 +24,6 @@ public class simpleCalculator {
         int result = 0;
         Scanner scanner = new Scanner(System.in);
 
-
-
         System.out.print("Enter number of Digits: ");
         int num = scanner.nextInt();
         scanner.nextLine();
