@@ -10,10 +10,15 @@ public class primeNumber {
 
         if(num ==2 || num==3){
             System.out.print(num + (" is a prime number"));
-        }else if(num % 2 == 0 || num % 3 == 0){
+        }
+        else if(num % 2 == 0 || num % 3 == 0){
             System.out.println(num + " not a prime number");
 
         }
+        else{
+            System.out.println(num + " is a prime number.");
+        }
+
 
 
 
