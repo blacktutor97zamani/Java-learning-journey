@@ -3,7 +3,7 @@ public class arrays {
 
         int[] arr = new int[5];
        // int fill = (int)(Math.random()*10);
-        System.out.println(fill);
+        //System.out.println(fill);
         for(int i = 0; i < 5; i++){
             arr[i] = (int)(Math.random()*10);;
             int store = arr[i];
@@ -11,7 +11,7 @@ public class arrays {
         }
 
         for(int i = 1; i < 5; i++){
-            System.out.println(arr[i]);
+            System.out.print(arr[i] + " ");
         }
 
 
