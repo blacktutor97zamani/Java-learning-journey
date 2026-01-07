@@ -2,8 +2,10 @@ public class enhancedForLoop {
 
     public static void main(String[] args) {
 
+        //Array to store data of students
         int[] scores = {75, 82, 90, 68, 88};
 
+        //Variable to store total of all student scores
         int total = 0;
         int highest = scores[0];
         int lowest = scores[0];
