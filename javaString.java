@@ -1,6 +1,6 @@
 public class javaString {
     public static void main(String[] args){
-        //string is a class rather than than primitive data type.
+        //string is a class rather than primitive data type.
         // it creates an object in two different ways.
         //either by declaring it like a variable just like the primitive data type or
         //creating an object like below.
