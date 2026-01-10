@@ -27,5 +27,9 @@ public class staticVariable {
        std1.year = 2024;
         System.out.println("Course: " + std1.course+ "\nYear: " + std1.year + "\nName: " + school.name);
 
+        //String name = "yussif";
+        String name = new String("Yussif");
+
+
     }
 }
