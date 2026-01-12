@@ -5,10 +5,10 @@ public class recursion{
 
 //creating a recursive method 
 public static int sum(int a){
-    if(a < 0){
-        return a + sum(a -1);
+    if(a == 0){
+        return 0;
 }else { 
-    return 0;
+    return a + sum(a -1);
 }
 }
 
