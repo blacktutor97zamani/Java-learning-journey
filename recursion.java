@@ -13,6 +13,7 @@ public static int sum(int a){
 }
 
     public static void main(String[] args) {
-
+    int z = sum(10);
+    System.Out.Println(z);
 }
 }
