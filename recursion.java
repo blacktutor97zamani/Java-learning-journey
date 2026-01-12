@@ -5,8 +5,8 @@ public class recursion{
 
 //creating a recursive method 
 public static int sum(int a){
-    if(k < 0){
-        return k + sum(k -1);
+    if(a < 0){
+        return a + sum(a -1);
 }else { 
     return 0;
 }
