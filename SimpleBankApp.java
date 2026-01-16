@@ -26,14 +26,17 @@ public class SimpleBankApp {
             choice = scanner.nextInt();
             
             switch(choice){
-                case 1 -> deposit(amount);
+                case 1 -> balance += deposit(amount);
+                case 2 -> balance -= withdraw(amount);
+                case 3 -> AccountBalance(balance);
+                case 4 -> isRunning = false;
             }
         }
 
 
 
 
-        //Account Balance
+
         //exit
 
 
@@ -74,5 +77,12 @@ public class SimpleBankApp {
 
         return amount;
     }
+
+    //Account Balance
+    public static void AccountBalance(double balance){
+        System.out.println("Your account balance is : " + balance + " Ghc");
+    }
+
+
 }
 
