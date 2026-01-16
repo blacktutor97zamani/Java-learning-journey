@@ -24,10 +24,12 @@ public class SimpleBankApp {
                     "4. Exit ");
             System.out.print("Choose your choice (1-4): ");
             choice = scanner.nextInt();
+
+
             
             switch(choice){
                 case 1 -> balance += deposit(amount);
-                case 2 -> balance -= withdraw(amount);
+                case 2 -> balance -= withdraw();
                 case 3 -> AccountBalance(balance);
                 case 4 -> isRunning = false;
             }
@@ -59,15 +61,15 @@ public class SimpleBankApp {
     }
 
     //Withdraw
-    public static double withdraw(double amount){
-        System.out.print("Enter Amount: ");
-        amount = scanner.nextDouble();
+    public static double withdraw(){
+        System.out.print("Enter Amount to Withdraw: ");
+        double amount = scanner.nextDouble();
 
         if(amount < 0){
             System.out.println("Invalid Amount");
         }
 
-        else if(amount < balance){
+        else if(amount > balance){
             System.out.println("Insufficient Balance");
         }
 
