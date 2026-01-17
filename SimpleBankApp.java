@@ -74,6 +74,7 @@ public class SimpleBankApp {
         }
 
         else{
+            System.out.println(amount + "Ghc Successfully withdrawn");
             return amount;
         }
 
