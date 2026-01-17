@@ -13,9 +13,18 @@ public class DiceRoll {
         int numberOfDice = scanner.nextInt();
 
         Random random = new Random();
-        int roll = random.nextInt(1-7);
 
 
+        for(int i = 1; i <= numberOfDice; i++ ){
+            int roll = random.nextInt(1,7);
+            System.out.print("Dice "+ i + " = " + roll + "\n");
+
+        }
 
     }
+
+    public static void AsciiRep(){
+        
+    }
+
 }
