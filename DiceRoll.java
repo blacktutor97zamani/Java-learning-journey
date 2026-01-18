@@ -17,14 +17,67 @@ public class DiceRoll {
 
         for(int i = 1; i <= numberOfDice; i++ ){
             int roll = random.nextInt(1,7);
-            System.out.print("Dice "+ i + " = " + roll + "\n");
+            System.out.print("Dice"+ i + " = " + roll + "\n");
 
         }
 
     }
 
-    public static void AsciiRep(){
-        
+    public static void AsciiRep(int roll){
+            String dice1 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+
+        String dice2 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+
+        String dice3 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+
+        String dice4 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+
+        String dice5 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+
+        String dice6 = """
+                     -------
+                    |       |
+                    |       |
+                    |       |
+                     -------
+                    
+                    """;
+            }
     }
 
-}
+
