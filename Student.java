@@ -13,6 +13,10 @@ public class Student {
         this.Course = c;
     }
 
+    void study(){
+        System.out.println("Student is Studying.....");
+    }
+
     public static void main(String[] a){
 
         //All the instances(student 1 and 2) created have same values.
