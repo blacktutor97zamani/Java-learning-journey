@@ -17,6 +17,10 @@ public class Student {
         System.out.println("Student is Studying.....");
     }
 
+    void sleeping(){
+        System.out.println("Student is sleeping ");
+    }
+
     public static void main(String[] a){
 
         //All the instances(student 1 and 2) created have same values.
