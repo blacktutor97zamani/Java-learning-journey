@@ -1,9 +1,9 @@
 public class Animal {
     String name;
-    String age;
+    int age;
     boolean isAlive = true;
 
-    Animal(String name, String age){
+    Animal(String name, int age){
         this.name = name;
         this.age = age;
 
