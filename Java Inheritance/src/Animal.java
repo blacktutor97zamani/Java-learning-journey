@@ -9,7 +9,7 @@ public class Animal {
 
     }
     void eat(){
-        System.out.println("The" + this.name + " is eating");
+        System.out.println(this.name + " is eating");
     }
 
 }
