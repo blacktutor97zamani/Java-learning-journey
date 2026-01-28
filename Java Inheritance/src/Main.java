@@ -5,5 +5,8 @@ public class Main {
         //dog.age = 12;
         dog.eat();
 
+        cat Cat = new cat("Apuyuwayuwa", 2, "American-cat");
+        System.out.println(Cat.name + "\n" + Cat.age + "\n" + Cat.breed);
+
     }
 }
